@@ -42,7 +42,7 @@
 (setq org-directory "~/Documents/org/")
 
 (load! "~/.doom.d/customizations/ui.el")
-(load! "~/.doom.d/customizationsshortcuts.el")
+(load! "~/.doom.d/customizations/shortcuts.el")
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
