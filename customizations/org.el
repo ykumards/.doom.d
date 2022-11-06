@@ -13,13 +13,3 @@
 
 ;; org bullets
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
-
-(setq org-capture-templates
-      (quote (("t" "todo" entry (file "~/Documents/Work/org/inbox.org")
-               "* TODO %?\n%U\n%a\n")
-              ("w" "Write Something"
-               entry (file+datetree "~/Documents/Work/org/scraps.org")
-               "* %?"
-               :empty-lines 1)
-              ("n" "note" entry (file "~/Documents/Work/org/inbox.org")
-               "* %? :NOTE:\n%U\n%a\n"))))
