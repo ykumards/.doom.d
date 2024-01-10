@@ -46,7 +46,7 @@
       deft-directory "~/Documents/org/notes"
       deft-recursive t
       deft-use-filename-as-title t
-      deft-use-filter-string-for-filename t
+      deft-use-filter-string-for-filename  t
       deft-org-mode-title-prefix t
       deft-auto-save-interval 5.0)
 (setq deft-file-naming-rules
@@ -108,6 +108,11 @@
        :desc "Create daily entry for a date" "d" #'org-roam-dailies-capture-date
        :desc "Create daily entry for today" "t" #'org-roam-dailies-capture-today
        :desc "Capture" "c" #'org-roam-capture))
+
+
+;; Don't zoom editor in zen mode
+;;
+(setq +zen-text-scale 0)
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
@@ -182,7 +187,7 @@
 (setq projectile-enable-caching t)
 
 ;; vterm
-(setq vterm-shell "/opt/homebrew/bin/fish")
+(setq vterm-shell "/opt/homebrew/bin/zsh")
 
 ;; TRAMP
 (setq tramp-auto-save-directory "~/tmp/tramp/")
